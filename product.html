@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="product.css">
+  <title>Web Page</title>
+  <script src="crud.js" defer></script>
+
+</head>
+
+<body>
+  <h1>Welcome to my page</h1>
+  <br>
+
+
+  <div class="section2">
+    <div class="container">
+      <div class="items">
+        <div class="img img1"><img
+            src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" > </div>
+        <div class="name">SHOES</div>
+        <div class="price">Price: 500</div>
+        <div class="info">Very comfortable shoes.</div>
+        <button style="border-radius: 8px;" onClick="deleteItem(this)">Delete</button>
+        <button style="border-radius: 8px;" onClick="editItem(this)">Edit</button>
+      </div>
+      <div class="items">
+        <div class="img img1"><img
+            src="https://images.pexels.com/photos/3649765/pexels-photo-3649765.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"> </div>
+        <div class="name">Men's T-Shirt</div>
+        <div class="price">Price: 600</div>
+        <div class="info">Stylish T-Shirts.</div>
+        <button style="border-radius: 8px;" onClick="deleteItem(this)">Delete</button>
+        <button style="border-radius: 8px;" onClick="editItem(this)">Edit</button>
+      </div>
+      <div class="items">
+        <div class="img img1"><img
+            src="https://media.istockphoto.com/photos/folded-blue-jeans-on-a-white-background-modern-casual-clothing-flat-picture-id1281304280"> </div>
+        <div class="name">Jeans</div>
+        <div class="price">Price: 900</div>
+        <div class="info">Stylish Jeans.</div>
+        <button style="border-radius: 8px;" onClick="deleteItem(this)">Delete</button>
+        <button style="border-radius: 8px;" onClick="editItem(this)">Edit</button>
+      </div>
+      <div class="items">
+        <div class="img img1"><img
+            src="https://images.pexels.com/photos/6858618/pexels-photo-6858618.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"> </div>
+        <div class="name">Phones</div>
+        <div class="price">Price: 90000</div>
+        <div class="info">Smart Phones.</div>
+        <button style="border-radius: 8px;" onClick="deleteItem(this)">Delete</button>
+        <button style="border-radius: 8px;" onClick="editItem(this)">Edit</button>
+      </div>
+      <!-- <div class="items">
+          <div class="img img1"><img
+              src="https://media.istockphoto.com/photos/hand-of-a-lady-selecting-yellow-colored-saree-in-a-shop-picture-id1301740530"> </div>
+          <div class="name">Product Name: Sarees</div>
+          <div class="price">Price: $15</div>
+          <div class="info">Stylish Sarees.</div>
+        </div>
+        <div class="items">
+          <div class="img img1"><img
+              src="https://images.pexels.com/photos/4339598/pexels-photo-4339598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt=""> </div>
+          <div class="name">Product Name: Bags</div>
+          <div class="price">Price: $35</div>
+          <div class="info">Modern Variety.</div>
+        </div>
+        <div class="items">
+          <div class="img img1"><img
+              src="https://images.pexels.com/photos/2659939/pexels-photo-2659939.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"  
+                    alt=""> </div>
+                <div class=" name">Product Name: Laptops</div>
+          <div class="price">Price: $99</div>
+          <div class="info">Compatible.</div>
+        </div>
+        <div class="items">
+          <div class="img img1"><img
+              src="https://media.istockphoto.com/photos/black-coffee-maker-with-green-led-lights-picture-id177395430 "
+              alt=""> </div>
+          <div class="name">Product Name: Coffee Maker</div>
+          <div class="price">Price: $29</div>
+          <div class="info">Best.</div>
+        </div>
+        <div class="items">
+          <div class="img img1"><img
+              src="https://images.pexels.com/photos/5834/nature-grass-leaf-green.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+              alt=""> </div>
+          <div class="name">Product Name: Books</div>
+          <div class="price">Price: $9</div>
+          <div class="info">English Novels.</div>
+        </div>-->
+
+
+
+
+    </div>
+  </div>
+<div class = "section2"> 
+    <div class = "container">
+  <div id="result"></div>
+  </div>
+</div>
+
+
+
+
+  <div>
+    <form id=myform onsubmit="formData();return false" autocomplete="off">
+      <fieldset>
+        <legend style="text-align: center;">Add Product Details</legend>
+        <label for="pname">Product Name</label><br>
+        <input type="text" , id="pname" name="pname" required><br><br><br>
+        <label for="img">Image URL</label><br>
+        <input type="url" , id="img" name="img" required><br><br><br>
+        <label for="price">Price</label><br>
+        <input type="number" , id="price" name="price" required><br><br><br>
+        <label for="description">Description</label><br>
+        <input type="textarea" , id="description" name="description" required><br><br><br>
+        <input type="submit" id="button" value="Add Product">
+        
+
+
+      </fieldset>
+
+
+    </form>
+  </div>
+
+</body>
+
+</html>
